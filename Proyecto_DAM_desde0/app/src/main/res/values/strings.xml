@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">smarthome</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_favs">Favoritos</string>
+    <string name="menu_personales">Personales</string>
+    <string name="contrasenya">Contraseña</string>
+    <string name="login">Login</string>
+    <string name="registro">Registro</string>
+    <string name="descripcion">Descripción</string>
+    <string name="url">url</string>
+    <string name="imagen">Imagen</string>
+    <string name="precio">precio</string>
+    <string name="google">Google</string>
+    <string name="amazon">Amazon</string>
+    <string name="apple">Apple</string>
+    <string name="guardar">Guardar</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="repeat_password">Repite la contraseña</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="sistemas">Sistemas compatibles:</string>
+    <string name="logo_google">Logo Google</string>
+    <string name="logo_amazon">Logo Amazon</string>
+    <string name="logo_apple">Logo Apple</string>
+    <string name="selecciona_un_fabricante">Selecciona un fabricante</string>
+    <string name="introduce_el_nombre">Introduce el nombre</string>
+    <string name="show_precio">%2.2f €</string>
+    <string name="externo">Enlace externo</string>
+    <string name="establecer_nombre">Debes poner un nombre</string>
+    <string name="rellenar_campos">Debes rellenar todos los campos</string>
+    <string name="seleccionar_marca">Debes seleccionar una marca</string>
+    <string name="seleccionar_tipo">Debes seleccionar un tipo</string>
+    <string name="contrasenyas_no_coinciden">Las contraseñas no coinciden</string>
+    <string name="error_crear_usuario">Error al crear el usuario</string>
+    <string name="dispositivo_existe">El nombre ya existe</string>
+    <string name="eliminar">Eliminar</string>
+</resources>
+</resources>

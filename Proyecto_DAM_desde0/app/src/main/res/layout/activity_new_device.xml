@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.newDevice.NewDeviceActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_vertical_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_horizontal_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.1" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_horizontal_75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.75" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_horizontal_90"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.9" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_nombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/guideline_horizontal_10">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_descripcion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:hint="@string/descripcion"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/til_nombre">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_descripcion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_url"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:hint="@string/url"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/til_descripcion">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_url"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_imagen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:hint="@string/imagen"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/til_url">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_imagen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_precio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:hint="@string/precio"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/til_imagen">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/tie_precio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="numberDecimal" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tipo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/til_precio">
+
+                <Spinner
+                    android:id="@+id/spinner_tipo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/new_tipo"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="12dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="9dp"
+                    android:paddingEnd="0dp"
+                    app:cornerRadius="25dp"
+                    app:icon="@drawable/ic_baseline_add_24"
+                    app:iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_fabricante"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/ll_tipo">
+
+                <Spinner
+                    android:id="@+id/spinner_fabricante"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/new_fabricante"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="12dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="9dp"
+                    android:paddingEnd="0dp"
+                    app:cornerRadius="25dp"
+                    app:icon="@drawable/ic_baseline_add_24"
+                    app:iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_marca"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/ll_fabricante">
+
+                <Spinner
+                    android:id="@+id/spinner_marca"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/new_marca"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="12dp"
+                    android:insetLeft="0dp"
+                    android:insetTop="0dp"
+                    android:insetRight="0dp"
+                    android:insetBottom="0dp"
+                    android:paddingStart="9dp"
+                    android:paddingEnd="0dp"
+                    app:cornerRadius="25dp"
+                    app:icon="@drawable/ic_baseline_add_24"
+                    app:iconPadding="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sistemas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/ll_marca">
+
+                <CheckBox
+                    android:id="@+id/google"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/google" />
+
+                <CheckBox
+                    android:id="@+id/amazon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/amazon" />
+
+                <CheckBox
+                    android:id="@+id/apple"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/apple" />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/double_default"
+                android:text="@string/guardar"
+                app:layout_constraintEnd_toEndOf="@id/guideline_vertical_90"
+                app:layout_constraintTop_toBottomOf="@id/ll_sistemas" />
+            <com.google.android.material.button.MaterialButton
+                android:visibility="gone"
+                android:id="@+id/eliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/double_default"
+                android:text="@string/eliminar"
+                android:backgroundTint="@color/md_theme_dark_errorContainer"
+                app:layout_constraintStart_toStartOf="@id/guideline_vertical_10"
+                app:layout_constraintTop_toBottomOf="@id/ll_sistemas" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>
